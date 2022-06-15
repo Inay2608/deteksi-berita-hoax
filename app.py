@@ -15,10 +15,10 @@ import pandas as pd
 app = Flask(__name__)
 
 # Inisialisasi object flask_restful
-api = Api(app)
+#api = Api(app)
 
 # Inisialisasi flask_cors
-CORS(app)
+#CORS(app)
 
 model = pickle.load(open('bernoulli_nb.pkl', 'rb'))
 file = pickle.load(open('selected_features.pkl', 'rb'))
