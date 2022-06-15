@@ -1,1 +1,1 @@
-web:gunicorn app:app --reload --workers 2
+web:gunicorn -b :5000 --access-logfile - --error-logfile - app:app --reload --workers 2
