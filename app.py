@@ -45,7 +45,7 @@ def fake_news(berita):
     
     return prediction
 
-@app.route("/favicon.ico", methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
         return render_template("index.html")
