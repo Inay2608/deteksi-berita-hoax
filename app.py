@@ -45,7 +45,7 @@ def fake_news(berita):
     
     return prediction
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/favicon.ico", methods=['GET', 'POST'])
 def index():
     if request.method == 'GET':
         return render_template("index.html")
@@ -63,8 +63,9 @@ def index():
         return "Unsupported Request Method"
 
 
+
 if __name__ == '__main__':
-    app.run(port=PORT, debug=True)
+    app.run(port=5000, debug=True)
 
 
 
