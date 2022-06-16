@@ -36,10 +36,10 @@
 
 				<div class="row">
 					<div class="col-md-12 home-weeedid text-center">
-						<h1><b>Analysis Sentiment Fake News</b></h1>
+						<h1><b>Fake News Detection</b></h1>
 						<h4 class="text-muted">Project Ini Dibuat Untuk Hasil Akhir Kerja Kelompok kami yang bertujuan untuk melakukan analisis 
-						</h4>
-
+						</h4><br><br>
+<!--
 						<div class="row-padding">
 							<a href="#product" class="btn">Pengujian Analysis</a>
 						</div>
@@ -58,22 +58,21 @@
 						<h6 class="text-muted penulis">Amit Ray</h6>
 					</div>
 				</div>
-
+-->
 				<section id="product">
 					<form class="" method="POST" action="">
 					<div class="form-group">
-					<label for="text">Input Berita</label>
 					<textarea type="text" class="form-control" id="text" placeholder="Masukan Berita" name="berita" required style="resize:none;width: 1100px;height: 200px;"></textarea>
 				</div>
-					<button type="submit" class="btn btn-primary">Analysis</button>
-				<br>
+					<button type="submit" class="btn btn-primary">Analysis</button><br><br>
+				
 				</form>
 
 				<div class="prediction-result">
-					{% if(prediction == 0 )%}
-						<h2 style="color:green;">Real News</h2>
-					{% elif (prediction == 1) %} 
-							<h2 style="color:red;">Fake News</h2>
+					{% if(prediction == 1 )%}
+						<h2 style="color:green; border: 10px double green; text-align: center;font-size: 45px;">Real News</h2>
+					{% elif (prediction == 0) %} 
+							<h2 style="color:red; border: 10px double red; text-align: center;font-size: 45px;">Fake News !!!</h2>
 					{%endif%}
 					</div>
 				</section>
