@@ -66,9 +66,7 @@ def index():
 
 
 if __name__ == '__main__':
-    socktio.run(app)
-
-python3 __init__.py
+    app.run(port=5000,debug=True)
 
 
 
