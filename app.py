@@ -25,7 +25,7 @@ model = pickle.load(open('bernoulli_nb.pkl', 'rb'))
 file = pickle.load(open('selected_features.pkl', 'rb'))
 #file = np.array(file)
 #file = np.reshape(1, -1)
-dataframe = pd.read_excel("/datasets/data_scraping_clean.xlsx")
+dataframe = pd.read_csv("datasets/600 news with valid hoax label.csv")
 
 x = dataframe['clean_teks']
 y = dataframe['label']
